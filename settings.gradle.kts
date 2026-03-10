@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "lec5 Mession"
+rootProject.name = "lec5 Mission"
 include(":app")

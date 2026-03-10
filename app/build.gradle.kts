@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.abs.lec5mession"
+    namespace = "com.abs.lec5mission"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.abs.lec5mession"
+        applicationId = "com.abs.lec5mission"
         minSdk = 30
         targetSdk = 36
         versionCode = 1

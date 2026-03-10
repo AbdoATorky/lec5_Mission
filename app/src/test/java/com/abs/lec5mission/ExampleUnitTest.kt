@@ -1,4 +1,4 @@
-package com.abs.lec5mession
+package com.abs.lec5mission
 
 import org.junit.Test
 
