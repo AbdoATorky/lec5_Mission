@@ -3,6 +3,7 @@ package com.abs.lec5mission
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,6 +26,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
 
         }
+
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                // Close the activity and all activities below it
+                finishAffinity()
+            }
+        }
+        onBackPressedDispatcher.addCallback(this, callback)
+
 
     }
 }
